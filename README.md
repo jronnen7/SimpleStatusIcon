@@ -4,13 +4,7 @@ Windows Taskbar Notify Icon application designed to change icons based on resolv
 
 ## Build &amp; Install
 
-The project requires DotNet Core 3 Preview 9 in order to build download that from Microsoft's website.
-
-The best way to install the app is to build the app and copy all resulting files to a safe location.  Use windows `Task Scheduler` to schedule the task to run when your computer starts up.  Set to run the program when the user logins in.
-
-1) Action: Start a Program
-2) Program/script: {location of built exe}
-3) Start in: {directory of built exe)
+The project requires dotnet core 3 to run, please read more about this in the build/README.md file.
 
 ## Icon Files
 
@@ -43,7 +37,7 @@ For the below config, it will first ping 10.0.0.1, if this resolves successfully
         "HoverText": "Connected to Private Network",
         "Condition": {
           "Test": "Ping",
-          "Uri": "172.24.64.114"
+          "Uri": "10.10.1.121"
         }
       },
       {
