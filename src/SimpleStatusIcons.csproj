@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\content\**\*" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0-rc1.19456.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.0.0-rc1.19456.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.0.0-rc1.19456.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0-rc1.19456.10" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0-rc1.19456.10" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.0.0-rc1.19456.10" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0-rc1.19456.10" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.0.0-rc1.19456.10" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0-rc1.19456.10" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.0.0-rc1.19456.10" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\3.0.0-rc1-19456-20\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\3.0.0-rc1-19456-20\System.Windows.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="..\content\Icons\check-circle-black.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\content\Icons\check-circle-green.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\content\Icons\check-circle-offwhite.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\content\Icons\minus-circle-gray.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\content\Icons\minus-circle-red.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
